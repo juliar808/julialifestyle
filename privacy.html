@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--
+  Same three find-and-replace strings as index.html:
+    YOUR BRAND / YOUR NAME / you@example.com
+  Also update the "Last updated" date below.
+
+  This is a plain-language policy written to match what your setup
+  actually does. It is not legal advice — if you later add an email
+  list, analytics, or ads, come back and update it.
+-->
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy — YOUR BRAND</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --paper: #faf7f3; --ink: #241f1c; --soft: #6a615a;
+    --line: #e0d8ce; --accent: #7c6a8a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: "Inter", system-ui, sans-serif; line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 660px; margin: 0 auto; padding: 56px 24px 80px; }
+  .back {
+    font-size: 13px; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--accent); text-decoration: none; font-weight: 500;
+  }
+  .back:hover { text-decoration: underline; }
+  h1 {
+    font-family: "Fraunces", Georgia, serif; font-weight: 400;
+    font-size: clamp(28px, 5vw, 38px); letter-spacing: -.02em;
+    margin: 28px 0 8px;
+  }
+  .updated { color: var(--soft); font-size: 14px; margin: 0 0 40px; }
+  h2 {
+    font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 19px;
+    margin: 36px 0 10px; padding-top: 24px; border-top: 1px solid var(--line);
+  }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  p { margin: 0 0 14px; }
+  ul { padding-left: 20px; margin: 0 0 14px; }
+  li { margin-bottom: 7px; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line);
+           font-size: 14px; color: var(--soft); }
+</style>
+
+<div class="wrap">
+  <a class="back" href="index.html">← YOUR BRAND</a>
+  <h1>Privacy policy</h1>
+  <p class="updated">Last updated: 1 August 2026</p>
+
+  <h2>The short version</h2>
+  <p>
+    This is a personal website run by one person. It has no accounts, no login,
+    no comments, no newsletter, and no tracking scripts. I don't collect
+    personal information from visitors, and I have nothing to sell to anyone.
+  </p>
+
+  <h2>What this site collects</h2>
+  <p>
+    Nothing directly. The site is static pages with no forms and no analytics.
+  </p>
+  <p>
+    The site is hosted on GitHub Pages, and like any web host, GitHub records
+    standard server request data such as IP addresses. That happens at the
+    hosting layer and I have no access to it. See
+    <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>.
+  </p>
+
+  <h2>Affiliate links</h2>
+  <p>
+    As an Amazon Associate I earn from qualifying purchases. Some links here
+    and on my Pinterest boards go to Amazon and carry a tracking tag that tells
+    Amazon the visit came from me.
+  </p>
+  <p>
+    If you click one, Amazon may place a cookie in your browser so a purchase
+    can be attributed to my account. I don't see who you are — I only see
+    aggregate counts of clicks and orders. What Amazon does with that data is
+    governed by
+    <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=468496">Amazon's privacy notice</a>,
+    not this one.
+  </p>
+  <p>
+    Buying through an affiliate link costs you nothing extra, and whether a
+    product has an affiliate link has no bearing on whether I recommend it.
+  </p>
+
+  <h2>Pinterest</h2>
+  <p>
+    I publish to my own Pinterest business account using Pinterest's official
+    API. That connection reads and writes only my own boards, pins, and
+    analytics. It does not access any other Pinterest user's data, and I don't
+    store information about people who view or save my pins beyond the
+    aggregate counts Pinterest shows me in its own analytics.
+  </p>
+
+  <h2>Children</h2>
+  <p>
+    This site isn't directed at children under 13 and I don't knowingly collect
+    information from them. Since the site collects nothing from anyone, there's
+    nothing to delete — but if you have a concern, email me.
+  </p>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li>You can block or clear cookies in your browser settings, which will stop affiliate attribution.</li>
+    <li>You can browse this site with any content blocker; nothing here depends on tracking.</li>
+    <li>You can email me with any question about this policy.</li>
+  </ul>
+
+  <h2>Changes</h2>
+  <p>
+    If I add anything that collects data — an email list, analytics, ads — I'll
+    update this page and change the date at the top.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    YOUR NAME — <a href="mailto:you@example.com">you@example.com</a>
+  </p>
+
+  <footer>© <span id="y"></span> YOUR BRAND</footer>
+</div>
+
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>

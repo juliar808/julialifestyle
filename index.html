@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--
+  ─────────────────────────────────────────────────────────────
+  BEFORE YOU DEPLOY: find-and-replace these three strings in
+  BOTH index.html and privacy.html.
+
+    YOUR BRAND      → your brand or company name
+    YOUR NAME       → your legal name
+    you@example.com → a real address you check
+
+  Then rename this file to index.html and push both files to a
+  GitHub repo named <username>.github.io, or enable Pages on any
+  repo under Settings → Pages → Deploy from branch → main.
+  ─────────────────────────────────────────────────────────────
+-->
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YOUR BRAND — skincare and beauty notes</title>
+<meta name="description" content="Honest, product-first skincare and beauty recommendations for students on a budget.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --paper:  #faf7f3;
+    --ink:    #241f1c;
+    --soft:   #6a615a;
+    --line:   #e0d8ce;
+    --accent: #7c6a8a;   /* muted plum — not the beauty-blog pink default */
+    --card:   #fffdfb;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: "Inter", system-ui, sans-serif; line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 0 24px 80px; }
+
+  header { padding: 64px 0 40px; border-bottom: 1px solid var(--line); margin-bottom: 40px; }
+  .mark {
+    font-family: "Fraunces", Georgia, serif; font-size: 13px; font-weight: 600;
+    letter-spacing: .18em; text-transform: uppercase; color: var(--accent);
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-family: "Fraunces", Georgia, serif; font-weight: 400;
+    font-size: clamp(30px, 6vw, 46px); line-height: 1.15;
+    letter-spacing: -.02em; margin: 0 0 18px;
+  }
+  .lede { font-size: 17px; color: var(--soft); max-width: 54ch; margin: 0; }
+
+  h2 {
+    font-family: "Fraunces", Georgia, serif; font-weight: 600;
+    font-size: 21px; letter-spacing: -.01em; margin: 44px 0 12px;
+  }
+  p { margin: 0 0 16px; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+
+  .disclosure {
+    background: var(--card); border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    padding: 18px 20px; margin: 32px 0; font-size: 15px;
+  }
+  .disclosure strong { display: block; margin-bottom: 6px; font-weight: 600; }
+
+  ul { padding-left: 20px; margin: 0 0 16px; }
+  li { margin-bottom: 8px; }
+
+  footer {
+    margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line);
+    font-size: 14px; color: var(--soft);
+    display: flex; gap: 20px; flex-wrap: wrap;
+  }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="mark">YOUR BRAND</div>
+    <h1>Skincare and beauty notes, written for a student budget.</h1>
+    <p class="lede">
+      Product-first recommendations for people figuring out a routine without
+      much money to waste on things that don't work. Everything here is
+      something I'd actually buy.
+    </p>
+  </header>
+
+  <div class="disclosure">
+    <strong>Affiliate disclosure</strong>
+    As an Amazon Associate I earn from qualifying purchases. Some links on this
+    site and on my Pinterest boards are affiliate links, which means I may earn
+    a commission if you buy through them at no extra cost to you. This never
+    changes what I recommend.
+  </div>
+
+  <h2>What you'll find here</h2>
+  <p>
+    Short write-ups on individual products and simple routines: what something
+    does, what it feels like to use, and roughly what it costs. I write about
+    what a product does rather than what's supposedly wrong with your face.
+  </p>
+
+  <h2>What I don't do</h2>
+  <ul>
+    <li>Claim a product treats acne, aging, or any skin condition. I'm not a dermatologist and neither is a product listing.</li>
+    <li>Give advice on combining active ingredients. Ask a professional.</li>
+    <li>Post before-and-after comparisons.</li>
+    <li>List prices, because they change constantly. Check the current price at the link.</li>
+  </ul>
+
+  <h2>About</h2>
+  <p>
+    I'm YOUR NAME, a college student writing about the products I use.
+    You can reach me at <a href="mailto:you@example.com">you@example.com</a>.
+  </p>
+
+  <footer>
+    <a href="privacy.html">Privacy policy</a>
+    <span>© <span id="y"></span> YOUR BRAND</span>
+  </footer>
+</div>
+
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
